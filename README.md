@@ -28,9 +28,7 @@ A notary can also certify a document, but this option may be more expensive than
 
 ## Dependencies
 
-Veracrypt 1.25.9
-git
-texlive-full
+Veracrypt 1.25.9, git, texlive-full
 
 
 ## Hash functions
