@@ -1,6 +1,6 @@
 # Git Repository Timestamping with Enveloppe Soleau
 
-The purpose of an enveloppe soleau is to legaly assert the state of a document at a specific time.
+The purpose of an enveloppe soleau is to legally assert the state of a document at a specific time.
 This script extends that concept to git repositories.
 
 The script encrypts the entire git repository and writes it to a USB key. It also generates a PDF containing hashes, a timestamp, and decryption keys.
@@ -48,10 +48,10 @@ and you will loose all data, if any was stored in it.
 - (facultative) connect to your git VPN
 - Add `ssh` URLs of your git repositories to `repositories.txt`. One per line.
 - UNMOUNT USB key
-- unplug/replug USB key
+- unplug/re-plug USB key
 - UNMOUNT AGAIN
 - Run generate.sh <path-to-usb-partition> (e.g., /dev/sda1)
-  !!! CAUTION !!!: do not confuse USB mountpoint with your own disks
+  !!! CAUTION !!!: do not confuse USB mount point with your own disks
 - You should see "The VeraCrypt volume has been successfully created." in the console logs, if not you messed something up.
 - `enveloppe-solo.pdf` is created in the current directory
 - Print the PDF
@@ -62,15 +62,15 @@ and you will loose all data, if any was stored in it.
 
 ## HOW TO DECRYPT
 
-- You need both the usb key and the associated PDF
+- You need both the USB key and the associated PDF
 - Write Keyfile to a text file without spaces nor carriage returns/line breaks. 
 - Plug USB key
 - Open Veracrypt
 - Right click on a slot and click "Select Device and Mount ..."
-- Select your usb key
-- Click on "Keyfiles", then "Add file", and select the keyfile that you created in step 2. Click ok.
+- Select your USB key
+- Click on "Keyfiles", then "Add file", and select the keyfile that you created in step 2. Click OK.
 - Write the password
-- Click ok
-- The USB key is now decyphered.
+- Click OK
+- The USB key is now deciphered.
 
 
