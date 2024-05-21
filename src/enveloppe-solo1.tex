@@ -1,0 +1,35 @@
+\documentclass[a4paper, 10pt]{letter}
+\usepackage{seqsplit}
+
+
+\newcommand{\hash}[1]{\texttt{\zz#1\zz}}
+\newcommand{\inputhash}[1]{\texttt{\input{#1}}}
+
+\def\zz#1{%
+ \ifx\zz#1\else
+   #1\linebreak[1]\expandafter\zz
+ \fi}
+
+% Name of sender
+\name{SOLEAU-COMPANY-NAME}
+
+\begin{document}
+
+% Name and address of receiver
+\begin{letter}
+
+Fingerprints of repositories owned by SOLEAU-COMPANY-NAME, and encrypted with veracrypt.\\
+\textit{
+Date: \today
+}
+
+*******************************************************************************
+\textbf{HASHES}
+
+\input{../hashfile}
+
+*******************************************************************************
+
+\textbf{KEYFILE} (no spaces, no carriage returns)
+
+\hash{
